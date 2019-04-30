@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+	<title>My Creative Work</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/creative.css">
+</head>
+<body>
+	<div id="main">
+		<div id="navbar">
+			<a href="index.html"><img id= "back" src="assets/img/back.png"></a>
+		</div>
+
+		<div id="pictures">
+			<h2>Art Projects</h2>
+			<div class="row">
+				<div class="item"><img class="itempic" id="picture-1" src="assets/img/Art1.jpg"></div>
+				<div class="item"><img class="itempic" id="picture-2" src="assets/img/Art2.jpg"></div>
+				<div class="item"><img class="itempic" id="picture-3" src="assets/img/Art3.jpg"></div>
+			</div>
+			<div class="row">
+				<div class="item"><img class="itempic" id="picture-4" src="assets/img/Art4.jpg"></div>
+				<div class="item"><img class="itempic" id="picture-5" src="assets/img/Art5.jpg"></div>
+				<div class="item"><img class="itempic" id="picture-6" src="assets/img/Art6.jpg"></div>
+			</div>
+			<h2>Photography Projects</h2>
+			<div class="row">
+				<div class="item"><img class="itempic" id="picture-7" src="assets/img/Landscape1.jpeg"></div>
+				<div class="item"><img class="itempic" id="picture-8" src="assets/img/Landscape2.jpg"></div>
+				<div class="item"><img class="itempic" id="picture-9" src="assets/img/Landscape3.jpg"></div>
+			</div>
+		</div>
+
+	</div>
+		<div id="lightbox-overlay" class="hidden"></div>
+
+		<div class="lightbox hidden" id="Art1">
+			<img src="assets/img/Art1.jpg" alt="">
+		</div>
+		<div class="lightbox hidden" id="Art2">
+			<img src="assets/img/Art2.jpg" alt="">
+		</div>
+		<div class="lightbox hidden" id="Art3">
+			<img src="assets/img/Art3.jpg" alt="">
+		</div>
+ 		<div class="lightbox hidden" id="Art4">
+			<img src="assets/img/Art4.jpg" alt="">
+		</div>
+		<div class="lightbox hidden" id="Art5">
+			<img src="assets/img/Art5.jpg" alt="">
+		</div>
+		<div class="lightbox hidden" id="Art6">
+			<img src="assets/img/Art6.jpg" alt="">
+		</div>
+		<div class="lightbox hidden" id="Landscape1">
+			<img src="assets/img/Landscape1.jpg" alt="">
+		</div>	
+		<div class="lightbox hidden" id="Landscape2">
+			<img src="assets/img/Landscape2.jpg" alt="">
+		</div>	
+		<div class="lightbox hidden" id="Landscape3">
+			<img src="assets/img/Landscape3.jpg" alt="">
+		</div>	
+
+		<div id="toolbar">
+			<img class="icon" src="assets/img/phone.png">
+			<a href="https://linkedin.com/in/sanket-swamy/"><img class="icon" src="assets/img/linkedin.svg"></a>
+			<img class="icon" src="assets/img/email.png">
+		</div>
+
+	    <script src="assets/scripts/creative.js"></script>
+
+	    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+		<script>
+			bubbly({
+		    colorStart: "#fff4e6",
+		    colorStop: "#ffe9e4",
+		    blur: 1,
+		    compose: "source-over",
+		    bubbleFunc: () => `hsla(${Math.random() * 50}, 100%, 50%, .3)`});
+	    </script>
+
+
+</body>
+</html>

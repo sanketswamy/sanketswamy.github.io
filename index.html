@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<title>Sanket Swamy</title>
+</head>
+<body>
+		<div id="main">
+
+<!-- Screen 1- what do users see when they reach the site? -->
+			<div class="screen" id="screen1">
+				<div id="namebox">
+					<div id="name1">Hi, my name is</div>
+					<div id="name2"><i>SANKET SWAMY</i></div>
+				</div>
+			</div>
+<!-- Screen 2- Main Content Below the welcome image -->
+			<div class="screen" id="screen2">
+				<div id="intropara"><p>An engineer. A designer. An artist. A collaborator. A lot of words describe me, but my work speaks loader.<br>I am an undergraduate chemical engineering student at UC Berkeley, with interdisciplinary experience in<br>circuit design, chemical process design, material synthesis, and organic labwork. I am seeking further experience<br> with systems design to derive solutions to modern energy and economic problems.</p></div>
+				<div id="cardbox">
+					<div class="card" id="project_card">  Contact Me
+						<a href="projects.html"><div class="opacitybox"><img class="cardpic" src="assets/img/paint.png"></div></a>
+					</div>	
+					<div class="card" id="empty_card">     TBD
+						<div class="opacitybox"><img class="cardpic" src="assets/img/question.png"></div>
+					</div>
+					<div class="card" id="creative_card"> Creative Work
+						<a href="creative.html"><div class="opacitybox"><img class="cardpic" src="assets/img/Computer.png"></div></a>
+					</div>
+				</div>
+<!-- Bottom Toolbar -->
+				<div id="toolbar">
+ 					<img class="icon" src="assets/img/phone.png">
+					<a href="https://linkedin.com/in/sanket-swamy/"><img class="icon" src="assets/img/linkedin.svg"></a>
+					<img class="icon" src="assets/img/email.png">
+				</div>
+			</div>
+<!-- JS Script for Bubbly Background -->
+			<script src="assets/scripts/creative2.js"></script>
+			<script>
+				bubbly({
+			    colorStart: "#4c004c",
+			    colorStop: "#1a001a",
+			    bubbleFunc: () => `hsla(${Math.random() * 360}, 100%, 50%, ${Math.random() * 0.25})`});
+			</script>
+		</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+body {
+	margin: 0;
+}
+
+#navbar {
+	height: 60px;
+	background-image: linear-gradient(#12105e,#5526c1)
+}
+
+#back {
+	height:40px;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+/* image placements/positions */
+.row {
+	width: 100%;
+	height: 120px;
+	text-align: center;
+}
+
+.item {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0);
+	display: inline-block;
+	overflow: hidden;
+/* Turn items into a square, 120x120 px image */
+	width: 120px;
+	height: 120px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* image height position and border */
+.itempic {
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+   	padding:1px;
+   	border:1px solid #021a40;
+   	transition: 0.3s;
+   	cursor: pointer;
+}
+
+.itempic.img:hover {
+	opacity: 0.8;
+}
+
+/* Create a 10 px horizontal space between items */
+div.item{
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+/* PROBLEM 6: Create a 10px vertical space between rows */
+div.row{
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+/*html, body {
+	background: #fafafa;
+	font-family: 'Roboto', sans-serif;
+}*/
+
+.hidden {
+    display: none;
+}
+#lightbox-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+.lightbox img {
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#toolbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	height: 70px;
+	width: 100%;
+	background-image: linear-gradient(#5526c1,#12105e)
+}
+
+.icon {
+	height: 40px;
+	width: 40px;
+}
